@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cadastro de Entrada</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="acervo.html">Acervo</a></li>
+            <li><a href="cadastro.html">Cadastrar Entrada</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>
+  <header><h1>Cadastrar Nova Entrada</h1></header>
+  <main>
+    <form id="form-cadastro">
+      <input type="text" id="titulo" placeholder="Título" required>
+      <select id="categoria" required>
+        <option value="">Categoria</option>
+        <option value="História">História</option>
+        <option value="Arte">Arte</option>
+        <option value="Sentimentos">Sentimentos</option>
+        <option value="Cotidiano">Cotidiano</option>
+        <option value="Música">Música</option>
+        <option value="Tecnologia">Tecnologia</option>
+        <option value="Esportes">Esportes</option>
+      </select>
+      <textarea id="descricao" placeholder="Descrição" required></textarea>
+      <input type="date" id="data-estimada" required>
+      <button type="submit">Salvar Entrada</button>
+    </form>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
