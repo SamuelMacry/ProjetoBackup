@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acervo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="acervo.html">Acervo</a></li>
+          <li><a href="cadastro.html">Cadastrar Entrada</a></li>
+          <li><a href="dashboard.html">Dashboard</a></li>
+        </ul>
+    </nav>  
+  <header><h1>Acervo Cultural</h1></header>
+  <main>
+    <input type="text" id="busca" placeholder="Buscar por palavra-chave...">
+    <select id="filtro-categoria">
+      <option value="">Todas as Categorias</option>
+      <option value="História">História</option>
+      <option value="Arte">Arte</option>
+      <option value="Sentimentos">Sentimentos</option>
+      <option value="Cotidiano">Cotidiano</option>
+      <option value="Música">Música</option>
+      <option value="Tecnologia">Tecnologia</option>
+      <option value="Esportes">Esportes</option>
+    </select>
+    <div id="lista-acervo"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
